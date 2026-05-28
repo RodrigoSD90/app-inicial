@@ -1,0 +1,76 @@
+/* Paleta: Verde Sálvia, Bege Areia e Off-White */
+:root {
+    --primary-green: #1cd867;
+    --hover-green: #1cd867;
+    --bg-beige: #7c7a77;
+    --card-bg: #FFFFFF;
+    --text-color: #4A4A4A;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-beige);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h2 {
+    color: var(--primary-green);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 12px;
+    border: 2px solid #EEE;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary-green);
+}
+
+button {
+    padding: 12px;
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: var(--hover-green);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#resultado {
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    padding: 10px;
+    border-radius: 8px;
+}
