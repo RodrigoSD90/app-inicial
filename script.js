@@ -4,7 +4,7 @@ function verificarVaga() {
     const idade = parseInt(document.getElementById("idade").value);
     const altura = parseFloat(document.getElementById("altura").value);
     const resultado = document.getElementById("resultado");
-
+// Comentário teste de versionamento
     // Lógica de verificação: Idade >= 18 E Altura >= 1.70
     if (idade >= 18 && altura >= 1.70) {
         resultado.style.color = "green";
